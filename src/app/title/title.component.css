@@ -1,0 +1,33 @@
+.title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;
+    /* identical to box height */
+
+    color: #19C179;
+}
+
+.nolonContainer{
+    width: 155px;
+    height: 60px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.frame11{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 65px;
+
+    position: absolute;
+    width: 223px;
+    height: 63px;
+    left: 34px;
+    top: 16px;
+}
