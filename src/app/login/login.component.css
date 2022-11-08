@@ -1,0 +1,14 @@
+.mylog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 63px;
+  gap: 57px;
+
+  position: absolute;
+  width: 514px;
+  height: 569px;
+  left: 445px;
+  top: 160px;
+}
