@@ -14,7 +14,7 @@ import { MenuLoginComponent } from './menu-login/menu-login.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
     TitleComponent,
     MenuNavComponent,
     MenuLoginComponent
