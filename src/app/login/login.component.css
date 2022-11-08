@@ -10,7 +10,7 @@
   width: 514px;
   height: 550px;
   left: 445px;
-  top: 300px;
+  top: 200px;
 
   border: 1px solid #D4EEE2;
   border-radius: 4px;
@@ -34,11 +34,12 @@ button{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  alignment: center;
+  align-self: center;
   align-items: center;
   padding: 13px 20px;
   gap: 6px;
-
+  border: none;
+  color: #FFFFFF;
   width: 97px;
   height: 44px;
 
