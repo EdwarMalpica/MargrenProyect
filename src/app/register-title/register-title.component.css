@@ -1,0 +1,21 @@
+.registerTitle{
+    width: 168px;
+    height: 53px;
+/* H2 */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;
+    /* identical to box height */
+
+    color: #19C179;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
