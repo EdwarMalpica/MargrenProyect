@@ -1,0 +1,21 @@
+nav{
+  position:absolute;
+  top: 70px;
+  left: 1000px;
+  display: flex;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 300px;
+  height: 50px;
+  color: #253D4E;
+}
+.img2{
+  padding-top: 5px;
+}
+
