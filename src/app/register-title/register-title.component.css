@@ -3,14 +3,6 @@
     height: 53px;
 /* H2 */
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 52px;
-    /* identical to box height */
-
-    color: #19C179;
 
 
 /* Inside auto layout */
@@ -19,3 +11,15 @@
     order: 0;
     flex-grow: 0;
     }
+
+.registerTitle h2{
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 52px;
+    /* identical to box height */
+
+    color: #19C179;
+}

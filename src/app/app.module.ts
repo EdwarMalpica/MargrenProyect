@@ -11,6 +11,7 @@ import { MenuLoginComponent } from './menu-login/menu-login.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
+import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { InputTextComponent } from './input-text/input-text.component';
     MenuLoginComponent,
     RegisterComponent,
     RegisterTitleComponent,
-    InputTextComponent
+    InputTextComponent,
+    TipeDocumentComponent
 
   ],
   imports: [

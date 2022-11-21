@@ -1,0 +1,76 @@
+.containerTipeDc{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px 20px;
+gap: 12px;
+
+width: 420px;
+height: 68px;
+
+/* 13 */
+
+background: #FFFFFF;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+}
+
+.containerTipeDc div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px 0px 0px;
+    gap: 35px;
+
+    width: 413px;
+    height: 20px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.containerTipeDc div input{
+    width: 18px;
+    height: 20px;
+
+    background: #D9D9D9;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.containerTipeDc div label{
+    width: 46px;
+    height: 18px;
+
+/* H5 */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #939393;
+    /* Inside auto layout */
+
+}
+
