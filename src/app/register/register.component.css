@@ -1,0 +1,16 @@
+.containerRegisterForm{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 63px;
+    gap: 57px;
+    position: absolute;
+    width: 600px;
+    height: 1200px;
+    left: 420px;
+    top: 183px;
+
+}
