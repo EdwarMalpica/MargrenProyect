@@ -1,0 +1,12 @@
+
+div{
+  position:absolute;
+  top: 90px;
+  left: 200px;
+  display: flex;
+}
+img{
+  margin: 5px;
+  width: 18px;
+  height: 18px;
+}

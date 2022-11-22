@@ -1,0 +1,21 @@
+div{
+  position:absolute;
+  top: 160px;
+  left: 200px;
+  display: flex;
+}
+p{
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #253D4E;
+}
+
+img{
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+}
