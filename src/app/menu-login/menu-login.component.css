@@ -2,8 +2,8 @@
     display: flex;
     text-align: right;
     position: absolute;
-    right: 0;
-    top: 40%;
+    right: 25px;
+    top: 10px;
 }
 .containerMenuLogin{
     display: flex;
@@ -17,25 +17,25 @@
 }
 
 .containerMenuLogin li{
-    
+
     width: 58px;
     height: 19px;
-    
+
     /* P2 */
-    
+
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    
+
     /* 2 */
-    
+
     color: #939393;
-    
-    
+
+
     /* Inside auto layout */
-    
+
     flex: none;
     order: 0;
     flex-grow: 0;

@@ -1,7 +1,7 @@
-.footer{
-  position:absolute;
-  top: 840px;
-  width: 1440px;
-  height: 400px;
-  background: #FFFFFF;
+footer{
+  position: absolute;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  margin-top: 80%;
+  overflow: visible;
 }
