@@ -1,7 +1,6 @@
 nav{
   position:absolute;
-  top: 70px;
-  left: 650px;
+  top: 75px;
   display: flex;
 }
 
@@ -10,19 +9,13 @@ ul{
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  margin: 2px;
 
-  width: 170px;
-  height: 235px;
 }
 li{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
 
-  width: 200px;
-  height: 186px;
   color: #253D4E;
 }
 a{

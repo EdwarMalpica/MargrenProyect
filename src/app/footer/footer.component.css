@@ -1,7 +1,7 @@
 footer{
-  position: absolute;
   border-top: 1px solid rgba(50, 50, 50, 0.3);
   width: 100%;
-  margin-top: 80%;
-  overflow: visible;
+  height: 36%;
+  top:470px;
+  
 }

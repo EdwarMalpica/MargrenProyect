@@ -1,8 +1,8 @@
 nav{
   position:absolute;
-  top: 70px;
-  left: 1100px;
   display: flex;
+  top: 75px;
+
 }
 
 li{
@@ -11,11 +11,13 @@ li{
   align-items: flex-start;
   padding: 0px;
 
-  width: 300px;
-  height: 50px;
   color: #253D4E;
 }
 .img2{
-  padding-top: 5px;
+  padding-top: 2px;
+  height: 42px;
+}
+img{
+  height: 40px;
 }
 
