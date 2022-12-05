@@ -1,9 +1,10 @@
 .containerM{
     display: flex;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    top: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
 .containerMenuLogin{
     display: flex;
@@ -14,28 +15,29 @@
     width: 127px;
     height: 19px;
     list-style: none;
+
 }
 
 .containerMenuLogin li{
-    
+
     width: 58px;
     height: 19px;
-    
+
     /* P2 */
-    
+
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    
+
     /* 2 */
-    
+
     color: #939393;
-    
-    
+
+
     /* Inside auto layout */
-    
+
     flex: none;
     order: 0;
     flex-grow: 0;

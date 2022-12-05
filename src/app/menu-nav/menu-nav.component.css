@@ -1,16 +1,23 @@
 .frame15{
     display: flex;
     flex-direction: row;
-    align-items: center;
+
+
     padding: 0px;
     gap: 24px;
-    
-    position: absolute;
     width: 533px;
     height: 20px;
     left: 488px;
-    top: 30px; 
+    top: 30px;
     list-style-type:none;
+
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .frame15 li{

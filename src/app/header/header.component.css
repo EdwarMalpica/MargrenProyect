@@ -1,6 +1,12 @@
 .headerC{
-    position: absolute;
-    width: 1440px;
+
+    width: 100%;
     height: 101px;
     background: #FFFFFF;
+    padding-top: 20px;
+
+}
+
+@media(max-width:500px){
+
 }
