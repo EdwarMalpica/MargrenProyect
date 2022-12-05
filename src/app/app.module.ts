@@ -29,11 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { LabelComponent } from './label/label.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material/input';
+
 
 
 
@@ -71,11 +68,9 @@ import { MatInputModule } from '@angular/material/input';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatSelectModule,
+
     BrowserAnimationsModule,
-    MatInputModule,
+
 
   ],
   providers: [],
