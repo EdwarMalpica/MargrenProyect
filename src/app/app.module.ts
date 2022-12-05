@@ -24,7 +24,17 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
 import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
-
+import { ProductsComponent } from './products/products.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { LabelComponent } from './label/label.component';
+import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -48,13 +58,25 @@ import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
     RegisterComponent,
     RegisterTitleComponent,
     InputTextComponent,
-    TipeDocumentComponent
-
+    TipeDocumentComponent,
+    ProductsComponent,
+    CardComponent,
+    UserDashboardComponent,
+    LabelComponent,
+    HomeComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

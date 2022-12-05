@@ -1,0 +1,31 @@
+.inputText{
+  /* Input field */
+
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 12px;
+
+  width: 419.5px;
+  height: 50px;
+
+  /* 13 */
+
+  background: #FFFFFF;
+  /* 4 */
+
+  border: 1px solid #D4EEE2;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
