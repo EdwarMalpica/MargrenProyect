@@ -1,5 +1,6 @@
 .miContainer{
-    position: absolute;
+    float: left;
     width: 100%;
     background: #FFFFFF;
+    
 }

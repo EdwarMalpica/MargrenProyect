@@ -40,3 +40,11 @@
     order: 0;
     flex-grow: 0;
 }
+a:link{
+    color:#253D4E ;
+    text-decoration: none;
+}
+a:visited{
+    color: #27CA7D;
+    text-decoration: none;
+}

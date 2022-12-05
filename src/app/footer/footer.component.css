@@ -1,7 +1,7 @@
 footer{
   border-top: 1px solid rgba(50, 50, 50, 0.3);
   width: 100%;
-  height: 36%;
-  top:470px;
+  height: 300px;
+  bottom: 10px;
   
 }
