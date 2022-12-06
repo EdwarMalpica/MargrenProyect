@@ -30,6 +30,10 @@ import { CardComponent } from './card/card.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { LabelComponent } from './label/label.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -60,6 +64,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CardComponent,
     UserDashboardComponent,
     LabelComponent,
+    HomeComponent,
+    CardComponent,
+    UserDashboardComponent,
+    LabelComponent,
+    DashboardProductsComponent,
+
 
 
   ],
@@ -70,6 +80,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
 
     BrowserAnimationsModule,
+    HttpClientModule,
 
 
   ],

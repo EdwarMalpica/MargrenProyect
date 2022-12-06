@@ -1,0 +1,91 @@
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">Primary Card</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-warning text-white mb-4">
+            <div class="card-body">Warning Card</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="card-body">Success Card</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-danger text-white mb-4">
+            <div class="card-body">Danger Card</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-header">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa fa-plus"></i>
+            Agregar producto
+        </button>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Unidad</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products; let i = index">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.type }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.amount }}</td>
+                    <td>{{ product.unit }}</td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-trash"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-body">
+                <app-products></app-products>
+            </div>
+        </div>
+    </div>
+</div>
