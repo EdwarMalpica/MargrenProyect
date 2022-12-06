@@ -1,4 +1,5 @@
 .recipe{
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +7,6 @@
   padding: 20px 50px;
   gap: 57px;
 
-  position: absolute;
   width: 50%;
   height: 850px;
   left: 445px;

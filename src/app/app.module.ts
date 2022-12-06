@@ -37,7 +37,6 @@ import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
     HeaderComponent,
     LoginComponent,
     TitleComponent,
-    MenuNavAdminComponent,
     MenuLoginComponent,
     FooterComponent,
     IconNetworksComponent,
