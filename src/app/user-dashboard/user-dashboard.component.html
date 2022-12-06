@@ -20,7 +20,7 @@
               <a class="nav-link" routerLink="/dashboard/products">Productos</a>
               <a class="nav-link" href="layout-sidenav-light.html">Ventas</a>
               <a class="nav-link" href="layout-sidenav-light.html">Pedidos</a>
-              <a class="nav-link" href="layout-sidenav-light.html">Recetas</a>
+              <a class="nav-link" routerLink="/dashboard/recipes">Recetas</a>
             </nav>
           </div>
           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
@@ -79,6 +79,9 @@
 
   <!-- Contenedor: Navegación dashboard -->
   <div id="navegador">
-    <router-outlet></router-outlet>
+    <div id="navegador-body" class="shadow mb-5 bg-white rounded">
+      <router-outlet></router-outlet>
+    </div>
+
   </div>
 </div>

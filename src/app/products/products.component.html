@@ -7,9 +7,9 @@
   </div>
   <form [formGroup]="formProducts" (ngSubmit)="onRegister()" #myFormProducts="ngForm">
     <div>
-      <input class="nameProduct form-control" placeholder="Ingrese el nombre de producto" formControlName="productName" type="text">
+      <input class="nameProduct form-control" placeholder="Ingrese el nombre de producto" formControlName="name" type="text">
     </div>
-    <select class="form-select select">
+    <select class="form-select select" formControlName="type">
       <option selected disabled>Seleccione el tipo de producto de producto</option>
       <option  *ngFor="let doc of productCategory" [value]="doc.id">{{doc.descripcion}}</option>
     </select>
@@ -28,19 +28,19 @@
             <div class="col col-sm-4 col-md-4 col-lg-4">
                 <div class="form-group">
                     <label for="precio" class="my-1">Precio</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="$">
+                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="$" formControlName="price">
                   </div>
             </div>
             <div class="col col-sm-4 col-md-4 col-lg-4">
                 <div class="form-group">
                     <label for="precio" class="my-1">Cantidad</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="">
+                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="amount">
                   </div>
             </div>
             <div class="col col-sm-4 col-md-4 col-lg-4">
                 <div class="form-group">
                     <label for="precio" class="my-1">Unidad</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="">
+                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="units">
                   </div>
             </div>
         </div>
@@ -48,10 +48,9 @@
     </div>
     <div class="buttSpace">
       <button [disabled]="myFormProducts.invalid" type="submit">Agregar</button>
-      <button type="button">Cancelar</button>
+      <button (click)="close()" type="button">Cancelar</button>
     </div>
   </form>
 
 
 </div>
-

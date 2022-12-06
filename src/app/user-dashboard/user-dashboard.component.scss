@@ -73,8 +73,9 @@
 }
 
 #navegador {
+  background-color: lightgray;
   height: 100vh;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -11706,4 +11707,7 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+#navegador-body {
+  padding: 30px;
 }

@@ -34,6 +34,7 @@ import { HomeComponent } from './home/home.component';
 import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-recipes.component';
 
 
 
@@ -69,6 +70,7 @@ import { HttpClientModule } from '@angular/common/http';
     UserDashboardComponent,
     LabelComponent,
     DashboardProductsComponent,
+    DashboarRecipesComponent,
 
 
 

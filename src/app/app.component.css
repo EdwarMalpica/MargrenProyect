@@ -1,7 +1,7 @@
-.miContainer{
-    position: relative;
-    width: 100%;
-    height: 2000px;
+.miContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
 
-    background: #FFFFFF;
+  background: #FFFFFF;
 }
