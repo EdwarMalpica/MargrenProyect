@@ -24,6 +24,10 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
 import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
+import { RecipeComponent } from './recipe/recipe.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
+import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 
 
 
@@ -33,7 +37,7 @@ import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
     HeaderComponent,
     LoginComponent,
     TitleComponent,
-    MenuNavComponent,
+    MenuNavAdminComponent,
     MenuLoginComponent,
     FooterComponent,
     IconNetworksComponent,
@@ -48,15 +52,23 @@ import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
     RegisterComponent,
     RegisterTitleComponent,
     InputTextComponent,
-    TipeDocumentComponent
+    TipeDocumentComponent,
+    RecipeComponent,
+    DashboardAdminComponent,
+    MenuNavAdminComponent,
+    MenuNavComponent
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
+  exports: [
+    MenuNavComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
