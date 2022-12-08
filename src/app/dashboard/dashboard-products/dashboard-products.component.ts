@@ -7,7 +7,7 @@ import { ProductsService } from 'src/app/services/products.service';
 @Component({
   selector: 'app-dashboard-products',
   templateUrl: './dashboard-products.component.html',
-  styleUrls: ['./dashboard-products.component.css']
+  styleUrls: ['./dashboard-products.component.scss']
 })
 export class DashboardProductsComponent implements OnInit {
 
@@ -18,6 +18,8 @@ export class DashboardProductsComponent implements OnInit {
   constructor(private modalService: NgbModal,
     private productsService: ProductsService) {
   }
+
+  //CRUD
 
   public filterProducts(): void {
     const text: string = this.searchText.toLocaleLowerCase();
@@ -74,5 +76,20 @@ export class DashboardProductsComponent implements OnInit {
     ];
     this.filteredProducts = this.products.filter(product => product.name.includes(""));
   }
+
+  //funcionalidades de los card
+  //función calcular precio
+  calculatenetPrice(){
+    let sum = 0;
+    for (let i = 0; i < this.products.length; i++) {
+      if(this.products[i].price){
+
+        sum += this.products[i].price;
+      }
+
+    }return sum;
+  }
+
+
 
 }

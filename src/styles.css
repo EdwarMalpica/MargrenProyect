@@ -1,8 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-button {
+.button-principal {
   border: none;
   color: #FFFFFF;
   background: linear-gradient(315deg, #19C179 -0.12%, #4FE58A 99.88%);
   border-radius: 4px;
+}
+
+.btn-search
+{
+  background: #337DFF;
+}
+
+.btn-edit{
+  background: #337DFF;
+}
+
+.btn-delete{
+  background: #FF334B;
+
 }

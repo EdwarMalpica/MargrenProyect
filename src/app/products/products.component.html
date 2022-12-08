@@ -6,45 +6,53 @@
     <img src="./assets/imageRegister.png">
   </div>
   <form [formGroup]="formProducts" (ngSubmit)="onRegister()" #myFormProducts="ngForm">
-    <div>
-      <input class="nameProduct form-control" placeholder="Ingrese el nombre de producto" formControlName="name" type="text">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-12">
+          <div class="form-group">
+            <input class="form-control my-2" placeholder="Ingrese el nombre del producto" formControlName="name"
+              type="text">
+          </div>
+        </div>
+        <div class="col col-sm-12 col-md-12 col-lg-12">
+          <div class="form-group">
+            <select class="form-select my-2" formControlName="type" [(ngModel)]="selectCategory">
+              <option selected disabled>Seleccione el tipo de producto de producto</option>
+              <option *ngFor="let doc of productCategory" [value]="doc.id">{{doc.descripcion}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col col-sm-12 col-md-12 col-lg-12">
+          <div class="form-group">
+            <input class="form-control my-2" placeholder="Ingrese la descripción del producto"
+              formControlName="description" type="text">
+          </div>
+        </div>
+      </div>
     </div>
-    <select class="form-select select" formControlName="type">
-      <option selected disabled>Seleccione el tipo de producto de producto</option>
-      <option  *ngFor="let doc of productCategory" [value]="doc.id">{{doc.descripcion}}</option>
-    </select>
-    <!--<div>
-      <mat-form-field >
-        <mat-select placeholder="Seleccione el tipo de producto de producto" formControlName="products">
-          <mat-option *ngFor="let doc of productCategory" [value]="doc.id">
-            {{doc.descripcion}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>-->
     <div class="card">
       <div class="container">
         <div class="row">
-            <div class="col col-sm-4 col-md-4 col-lg-4">
-                <div class="form-group">
-                    <label for="precio" class="my-1">Precio</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="$" formControlName="price">
-                  </div>
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group">
+              <label for="precio" class="my-1">Precio</label>
+              <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="$" formControlName="price">
             </div>
-            <div class="col col-sm-4 col-md-4 col-lg-4">
-                <div class="form-group">
-                    <label for="precio" class="my-1">Cantidad</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="amount">
-                  </div>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group">
+              <label for="precio" class="my-1">Cantidad</label>
+              <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="amount">
             </div>
-            <div class="col col-sm-4 col-md-4 col-lg-4">
-                <div class="form-group">
-                    <label for="precio" class="my-1">Unidad</label>
-                    <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="units">
-                  </div>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group">
+              <label for="precio" class="my-1">Unidad</label>
+              <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="" formControlName="units">
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
     <div class="buttSpace">
       <button [disabled]="myFormProducts.invalid" type="submit">Agregar</button>

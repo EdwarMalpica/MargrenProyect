@@ -51,6 +51,7 @@ button{
 .buttSpace{
   display: flex;
   justify-content: center;
+
 }
 .nameProduct{
   box-sizing: border-box;
@@ -61,8 +62,8 @@ button{
   padding: 0px 26px;
   gap: 12px;
 
-  width: 419.5px;
-  height: 44px;
+  /*width: 419.5px;
+  height: 44px;*/
   margin: 10px;
 
   background: #FFFFFF;
@@ -83,8 +84,8 @@ button{
   padding: 0px 26px;
   gap: 12px;
 
-  width: 419.5px;
-  height: 44px;
+  /*width: 419.5px;
+  height: 44px;*/
   margin: 10px;
 
   border: 1px solid #D4EEE2;
@@ -156,4 +157,8 @@ button{
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+.py-2{
+  padding: 2rem 0;
+
 }

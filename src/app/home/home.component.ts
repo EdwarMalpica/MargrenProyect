@@ -7,48 +7,84 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  //En el home card
   productsList: any[] = [
     {
     id: 1,
-    name: 'manzana de agua'
+    name: 'Manzana de agua',
+    image: './assets/home/manzana.jpg',
+    description: 'Esta es la descripcipn del producto'
+
   },
   {
     id: 2,
-    name: 'durazno rey negro'
+    name: 'Durazno rey negro',
+    image: './assets/home/Durazno.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 3,
-    name: 'fresas'
+    name: 'Fresas',
+    image: './assets/home/Fresa.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 4,
-    name: 'papa'
+    name: 'papa',
+    image: './assets/home/Papa.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 5,
-    name: 'lechuga'
+    name: 'lechuga',
+    image: './assets/home/Lechuga1.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 6,
-    name: 'papa dulce'
+    name: 'papa dulce',
+    image: './assets/home/Papa dulce.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 7,
-    name: 'maíz'
+    name: 'maíz',
+    image: './assets/home/Maíz.jpg',
+    description: 'Esta es la descripcipn del producto'
+
   },
   {
     id: 8,
-    name: 'alcachofa'
+    name: 'alcachofa',
+    image: './assets/home/Alcachofa1.jpg',
+    description: 'Esta es la descripcipn del producto'
   },
   {
     id: 9,
-    name: 'arverja'
+    name: 'arverja',
+    image: './assets/home/Arvejas.jpg',
+    description: 'Esta es la descripcipn del producto'
   }
   ,
   {
     id: 10,
-    name: 'habichuela'
+    name: 'habichuela',
+    image: './assets/home/Habichuela.jpg',
+    description: 'Esta es la descripcipn del producto'
+  } ,
+  {
+    id: 11,
+    name: 'zanahoria',
+    image: './assets/home/Zanahoria.jpg',
+    description: 'Esta es la descripcipn del producto'
+  },
+  {
+    id: 12,
+    name: 'remolacha',
+    image: './assets/home/Remolacha.jpg',
+    description: 'Esta es la descripcipn del producto'
   }
+
 
 
   ]

@@ -18,7 +18,7 @@ const routes: Routes = [
     ]
   },
   // { path: '**', component: HomeComponent }
-  //{ path: '', component: HomeComponent }
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({

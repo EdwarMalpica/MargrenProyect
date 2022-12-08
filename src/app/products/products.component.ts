@@ -8,29 +8,50 @@ import { ProductsService } from '../services/products.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
 
   @Input() public product: Product;
 
-  //variables
+  //variables --> en el select
   formProducts!: FormGroup
+
+  
   productCategory = [{
     id: 1,
-    descripcion: "manzana de agua"
+    descripcion: "Manzana de agua"
   },
   {
     id: 2,
-    descripcion: "durazno Rey Negro"
+    descripcion: "Durazno Rey Negro"
+  },
+  {
+    id: 3,
+    descripcion: "Fresa"
+  },
+  {
+    id: 4,
+    descripcion: "Lechuga"
+  },
+  {
+    id: 5,
+    descripcion: "Aguacate"
+  },
+  {
+    id: 6,
+    descripcion: "Papa"
   }
   ]
+
+  selectCategory: string[]=[]
 
   constructor(private _formBuilder: FormBuilder,
     private modalService: NgbModal,
     private productsService: ProductsService) {
   }
 
+  //Funcionalidad Botón cerrar
   public close(): void {
     this.modalService.dismissAll();
   }
@@ -48,16 +69,19 @@ export class ProductsComponent implements OnInit {
   //campos del form --> métodos
   ngOnInit(): void {
     this.buildForm();
+    this.productCategory
   }
 
   register = {
     nameProduct: '',
     typeProduct: '',
+    description: '',
     precio: '',
     cantidad: '',
     unidadMedida: '',
   }
 
+  //Para el back
   onRegister() {
     if (this.formProducts.valid) {
       let product: Product = this.formProducts.value;

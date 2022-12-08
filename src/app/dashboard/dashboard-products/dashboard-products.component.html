@@ -5,44 +5,49 @@
 <div class="row">
 
     <!-- Contenedor: Tarjeta total productos -->
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-primary text-white mb-4">
-            <div class="card-body">
-                Total productos<br>
-                <h3>{{ products.length }} unidades</h3>
-            </div>
+    <div class="col-12 col-md-3 p-2 ">
+        <div class="dashboard-card dashboard-card1 ">
+            Total productos<br>
+            <h3>{{ products.length }} unidades</h3>
         </div>
     </div>
 
-    <!-- Contenedor: Tarjeta precio total neto -->
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-warning text-white mb-4">
-            <div class="card-body">
-                Precio total neto<br>
-                <h3>$15.000</h3>
-            </div>
+
+
+    <!-- Contenedor: Tarjeta precio total neto-->
+
+    <div class="col-12 col-md-3 p-2">
+        <div class="dashboard-card dashboard-card2 ">
+
+            Precio total neto<br>
+            <h3>{{calculatenetPrice()|currency}}</h3>
         </div>
     </div>
+
 
     <!-- Contenedor: Tarjeta producto con más unidades -->
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-success text-white mb-4">
-            <div class="card-body">
-                Producto con más unidades<br>
-                <h3>Producto 1</h3>
-            </div>
+    <div class="col-12 col-md-3 p-2">
+        <div class="dashboard-card dashboard-card3 ">
+
+            Producto con más unidades<br>
+            <h3>Producto 1</h3>
+
         </div>
     </div>
 
+
+
     <!-- Contenedor: Tarjeta producto con menos unidades -->
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-danger text-white mb-4">
-            <div class="card-body">
-                Producto con menos unidades<br>
-                <h3>Producto 7</h3>
-            </div>
+    <div class="col-12 col-md-3 p-2">
+        <div class="dashboard-card dashboard-card4 ">
+
+            Producto con menos unidades<br>
+            <h3>Producto 7</h3>
+
         </div>
+
     </div>
+
 
 </div>
 <!-- ./Contenedor: Tarjetas -->
@@ -54,7 +59,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-9">
-                <button type="button" class="btn btn-primary" (click)="openProductCreator()">
+                <button type="button" class="btn btn-primary button-principal" (click)="openProductCreator()">
                     <i class="fa fa-plus"></i>
                     Agregar producto
                 </button>
@@ -90,13 +95,13 @@
                     <td>{{ product.unit }}</td>
                     <td style="text-align: center;">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary">
+                            <button type="button" class="btn btn-outline-primary">
                                 <i class="fa fa-search"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary" (click)="openProductEditor(product)">
+                            <button type="button" class="btn btn-outline-primary" (click)="openProductEditor(product)">
                                 <i class="fa fa-pencil"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary"
+                            <button type="button" class="btn btn-outline-danger"
                                 (click)="removeProduct(product, modalProductEliminator)">
                                 <i class="fa fa-trash"></i>
                             </button>
