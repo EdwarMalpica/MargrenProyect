@@ -24,6 +24,9 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
 import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
+import { ImageTeamComponent } from './image-team/image-team.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+
 
 
 
@@ -48,7 +51,10 @@ import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
     RegisterComponent,
     RegisterTitleComponent,
     InputTextComponent,
-    TipeDocumentComponent
+    TipeDocumentComponent,
+    ImageTeamComponent,
+    OurTeamComponent,
+
 
 
   ],
