@@ -31,7 +31,6 @@ import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
     TitleComponent,
     MenuNavComponent,
     MenuLoginComponent,
