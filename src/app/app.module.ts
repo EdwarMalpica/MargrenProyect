@@ -38,7 +38,6 @@ import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-
 
 
 import { RecipeComponent } from './recipe/recipe.component';
-import {ReactiveFormsModule} from "@angular/forms";
 import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
@@ -80,7 +79,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
     RecipeComponent,
     DashboardAdminComponent,
     MenuNavAdminComponent,
-    MenuNavComponent
+    MenuNavComponent,
     ImageTeamComponent,
     OurTeamComponent,
 
