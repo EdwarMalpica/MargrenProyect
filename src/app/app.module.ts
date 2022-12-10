@@ -34,7 +34,6 @@ import { OurTeamComponent } from './our-team/our-team.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
     TitleComponent,
     MenuNavComponent,
     MenuLoginComponent,

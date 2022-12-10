@@ -1,18 +1,36 @@
+<footer class="text-center text-black fixed-bottom">
+  <section class="d-flex justify-content-center justify-content-lg-between" >
+    <div class="me-4 d-none d-lg-block">
+      <app-title></app-title>
+    </div>
+  </section>
 
-<div class="footer">
-  <app-title></app-title>
-  <app-icon-networks></app-icon-networks>
-  <app-info-phone></app-info-phone>
-  <app-info-mail></app-info-mail>
-  <app-info-locate></app-info-locate>
-  <app-info-time></app-info-time>
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <app-icon-networks></app-icon-networks>
+          <app-info-phone></app-info-phone>
+          <app-info-mail></app-info-mail>
+          <app-info-locate></app-info-locate>
+          <app-info-time></app-info-time>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <app-companie></app-companie>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <app-account></app-account>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <app-download></app-download>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <app-companie></app-companie>
-
-  <app-account></app-account>
-
-  <app-download></app-download>
-  <app-copyright></app-copyright>
-</div>
+  <div>
+    <app-copyright></app-copyright>
+  </div>
+</footer>
 
 
