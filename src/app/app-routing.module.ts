@@ -8,7 +8,6 @@ import { ProductsComponent } from './products/products.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
-import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 
 
