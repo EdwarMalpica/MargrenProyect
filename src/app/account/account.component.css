@@ -1,7 +1,6 @@
 nav{
   position:absolute;
-  top: 70px;
-  left: 800px;
+  top: 75px;
   display: flex;
 }
 
@@ -11,8 +10,6 @@ li{
   align-items: flex-start;
   padding: 0px;
 
-  width: 200px;
-  height: 50px;
   color: #253D4E;
 }
 a{

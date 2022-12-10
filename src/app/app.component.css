@@ -1,3 +1,4 @@
+
 .miContainer {
   position: relative;
   width: 100%;
@@ -5,3 +6,13 @@
 
   background: #FFFFFF;
 }
+
+
+#miContainer{
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
+    
+}
+
+

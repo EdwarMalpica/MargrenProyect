@@ -37,15 +37,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-recipes.component';
 
 
+import { RecipeComponent } from './recipe/recipe.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
+import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
+import { ImageTeamComponent } from './image-team/image-team.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
     TitleComponent,
-    MenuNavComponent,
     MenuLoginComponent,
     FooterComponent,
     IconNetworksComponent,
@@ -71,6 +77,13 @@ import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-
     LabelComponent,
     DashboardProductsComponent,
     DashboarRecipesComponent,
+    RecipeComponent,
+    DashboardAdminComponent,
+    MenuNavAdminComponent,
+    MenuNavComponent
+    ImageTeamComponent,
+    OurTeamComponent,
+
 
 
 
@@ -80,13 +93,14 @@ import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-
     BrowserAnimationsModule,
     HttpClientModule,
 
-
   ],
   providers: [],
+  exports: [
+    MenuNavComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

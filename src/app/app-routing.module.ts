@@ -6,8 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProductsComponent } from './products/products.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { RecipeComponent} from "./recipe/recipe.component";
+import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
+import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
+
 
 const routes: Routes = [
+  {path: 'recipe', component:RecipeComponent },
+  {path: 'admin', component:DashboardAdminComponent },
+  {path: 'register', component:RegisterComponent},
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
   { path: "products", component: ProductsComponent },
@@ -20,6 +28,7 @@ const routes: Routes = [
   // { path: '**', component: HomeComponent }
   { path: '', component: HomeComponent }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
