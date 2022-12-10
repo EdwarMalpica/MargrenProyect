@@ -24,6 +24,18 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
 import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
+import { ProductsComponent } from './products/products.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { LabelComponent } from './label/label.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-recipes.component';
+
 
 import { RecipeComponent } from './recipe/recipe.component';
 import {ReactiveFormsModule} from "@angular/forms";
@@ -55,6 +67,16 @@ import { OurTeamComponent } from './our-team/our-team.component';
     RegisterTitleComponent,
     InputTextComponent,
     TipeDocumentComponent,
+    ProductsComponent,
+    CardComponent,
+    UserDashboardComponent,
+    LabelComponent,
+    HomeComponent,
+    CardComponent,
+    UserDashboardComponent,
+    LabelComponent,
+    DashboardProductsComponent,
+    DashboarRecipesComponent,
     RecipeComponent,
     DashboardAdminComponent,
     MenuNavAdminComponent,
@@ -64,11 +86,16 @@ import { OurTeamComponent } from './our-team/our-team.component';
 
 
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   exports: [

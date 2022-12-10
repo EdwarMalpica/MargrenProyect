@@ -1,0 +1,28 @@
+<!--
+  <div class="col-xl-3 col-md-6 ">
+    <div class="feature-box">
+      <div class="feature-image">
+        <img class="img-fluid blur-up lazyload "  [src]="product.image" alt="">
+      </div>
+      <div class="feature-content">
+
+
+          <h6>{{product.name}}</h6>
+      </div>
+      <p class="para">{{product.description}}<p>
+    </div>
+    </div> -->
+
+  <div class="row feature_row">
+    <div class="col-xl-3 col-md-6 " *ngFor="let productItem of product">
+      <div class="feature-box">
+        <div class="feature-image">
+          <img class="img-fluid blur-up lazyload  imgSize" [src]="productItem.image" alt="img">
+        </div>
+        <div class="feature-content">
+          <h6>{{productItem.name}}</h6>
+        </div>
+        <p class="para">{{productItem.description}}</p>
+      </div>
+    </div>
+  </div>

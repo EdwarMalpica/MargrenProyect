@@ -1,0 +1,132 @@
+<div data-spy="scroll" data-bs-target="#scroll-spy">
+
+
+    <!--header start-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="top-header">
+                        <div class="logo ps-2">
+                            <!--Logo-->
+                            <a class="navbar-brand" href="#"><img src="assets//header/imageLogin.png" alt="logo"></a>
+                        </div>
+                        <div class="main-menu mx-auto" id="nav">
+                            <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#scroll-spy" aria-controls="scroll-spy" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="scroll-spy">
+                                    <!--header links-->
+                                </div>
+                            </nav>
+                        </div>
+                        <div>
+                            <form target="_blank" class="form-inline my-lg-0" action="https://1.envato.market/Abq1o">
+                                <button class="btn my-sm-0 purchase-btn py-3 button-principal ">Comprar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+    <!--home section start-->
+    <section class="main-img responsive-img  pt-0" id="img-bg">
+        <div class="container-fluid">
+            <div class="main-contain">
+                <div>
+                    <h1 class="m-0">MARGREN<span>MARKETPLACE</span></h1>
+                    <h3 class="mat-typography m-0">Cada <span>PRODUCTO</span> Tiene una historia</h3>
+
+                    <div class="mt-4">
+                        <a target="_blank" href="front-end/index.html" class="btn btn-outline-success m-0 d-inline-block ">Vendedor</a>
+                        <a target="_blank" href="back-end/index.html" class="btn btn-primary  d-inline-block ms-3">Comprador</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-decor">
+
+                <!-- <div class="decor-3 decor wow zoomIn" id="img-1">
+                    <img src="./assets/slider/Salad.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div> -->
+                <div class="decor-3 decor wow zoomIn" id="img-2">
+                    <img src="./assets/slider/Portada.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+                <!-- <div class="decor-3 decor wow zoomIn" id="img-3">
+                    <img src="./assets/slider/Corazones.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div> -->
+                <!-- <div class="decor-3 decor wow zoomIn" id="img-4">
+                    <img src="./assets/slider/Salad.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div> -->
+                <!-- <div class="decor-3 decor wow zoomIn" id="img-5">
+                    <img src="./assets/slider/Salad.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div> -->
+                <!-- <div class="decor-8 decor wow zoomIn" id="img-6">
+                    <img src="./assets/slider/Salad.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div> -->
+                <div class="decor-9 decor wow zoomIn" id="img-7">
+                    <img src="./assets/slider/Fruits.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+                <div class="decor-8 decor wow zoomIn" id="img-8">
+                    <img src="./assets/slider/Salad.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+                <div class="decor-9 decor wow zoomIn" id="img-9">
+                    <img src="./assets/slider/Verduras.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+                <div class="decor-10 decor wow zoomIn" id="img-10">
+                    <img src="./assets/slider/Fruits.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+                <div class="decor-11 decor wow zoomIn" id="img-11">
+                    <img src="./assets/slider/Corazones.jpg" alt="" class=" img-fluid blur-up lazyload">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--home section end-->
+
+
+    <!--feature section start-->
+    <section id="feature" class="section-lr section-b-space feature-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="feature text-center">
+                        <div>
+                            <h5 class="title-landing">Razones para mercar en Magren?</h5>
+                            <p class="pb-3">Somos una plataforma pensada y desarrollada para
+                                llevarte salud a través de productos orgánicos de cálidad,
+                                y aportamos al desarrollo económico de la región apoyando a los productores primarios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--Acá componente card actual para mostrar productos-->
+            <div class="container-fluid">
+                <app-card [product]="productsList"></app-card>
+            </div>
+        </div>
+    </section>
+    <!--feature section end-->
+
+
+
+    <!-- tap to top -->
+    <div class="tap-top">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top End -->
+
+</div>
