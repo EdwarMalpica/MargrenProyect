@@ -1,7 +1,8 @@
+
 .miContainer{
-    position: relative;
-    width: 1440px;
-    height: 2000px;
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
     
-    background: #FFFFFF; 
 }
+

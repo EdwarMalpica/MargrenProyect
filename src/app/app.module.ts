@@ -24,10 +24,14 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
 import { TipeDocumentComponent } from './tipe-document/tipe-document.component';
+
 import { RecipeComponent } from './recipe/recipe.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
+import { ImageTeamComponent } from './image-team/image-team.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+
 
 
 
@@ -35,7 +39,6 @@ import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
     TitleComponent,
     MenuLoginComponent,
     FooterComponent,
@@ -56,6 +59,9 @@ import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
     DashboardAdminComponent,
     MenuNavAdminComponent,
     MenuNavComponent
+    ImageTeamComponent,
+    OurTeamComponent,
+
 
 
   ],

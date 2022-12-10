@@ -1,0 +1,8 @@
+.image-team {
+    width: 234px;
+    height: 245px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
