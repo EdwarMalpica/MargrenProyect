@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormArray, FormBuilder, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-recipe',
@@ -31,17 +31,32 @@ export class RecipeComponent implements OnInit {
       descripcion : "horas"
     }
   ]
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) { }
+  get ingredients(){
+    return this.registerForms.get("ingredients") as FormArray;
+  }
+  registerForms = this.formBuilder.group({
+    ingredients: this.formBuilder.array([])
+  })
   ngOnInit(): void {
-    this.formRecipe = this._formBuilder.group({
+    this.formRecipe = this.formBuilder.group({
       recipeName: [],
-      ingredients: [],
       unidad:[],
       steps:[],
-
-
     });
+  }
 
+  addIngredients(){
+    const ingredientsFormGroup = this.formBuilder.group({
+      ingredient: " ",
+      cantidad: " ",
+      unitofmeasure: ""
+    });
+    this.ingredients.push(ingredientsFormGroup);
+  }
+
+  removeIngredients(indice:number){
+    this.ingredients.removeAt(indice);
   }
 
   register ={
@@ -58,6 +73,10 @@ export class RecipeComponent implements OnInit {
 
   onRegister(){
     console.log(this.register);
+  }
+
+  refresh(){
+    this.ingredients.controls.splice(0,this.ingredients.length);
   }
 
 }

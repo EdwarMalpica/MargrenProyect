@@ -1,120 +1,154 @@
-<div class="recipe">
-  <div>
-    <h2>Agregar Receta</h2>
+<div data-spy="scroll" data-bs-target="#scroll-spy">
+  <div class="frame7">
+    <div class="recipe">
+      <div>
+        <h2>Agregar Receta</h2>
+      </div>
+      <div>
+        <img src="./assets/imageRegister.png">
+      </div>
+      <form [formGroup]="formRecipe" (ngSubmit)="onRegister()" #myFormRecipe="ngForm">
+        <div>
+          <input class="nameProduct form-control" placeholder="Ingrese el título de la receta " formControlName="recipeName" type="text">
+        </div>
+
+        <div>
+          <h6> Categoría </h6>
+          <input type="radio" name="" >
+          <label>Desayuno</label>
+          <input type="radio" name="" >
+          <label>Almuerzo</label>
+          <input type="radio" name="" >
+          <label>Cena</label>
+        </div>
+
+        <div>
+          <h6> Dificultad </h6>
+          <input type="radio" name="" >
+          <label>Fácil</label>
+          <input type="radio" name="" >
+          <label>Medio</label>
+          <input type="radio" name="" >
+          <label>Difícil</label>
+        </div>
+
+        <div class="card">
+          <div class="container">
+            <label class="labelPrin"> Ingredientes </label>
+            <div class="row">
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                   <label for="precio" class="my-1">Ingredientes</label>
+                   <select class="form-select select">
+                     <option selected disabled>Seleccione el producto </option>
+                     <option  *ngFor="let doc of ingredient" [value]="doc.id">{{doc.descripcion}}</option>
+                   </select>
+                </div>
+              </div>
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label class="label" class="my-1">Cantidad</label>
+                  <input type="number" min="0" autocomplete="on" step="1" class="form-control mt-2 mb-4">
+
+                </div>
+              </div>
+
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1">Unidad</label>
+                  <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1">Tiempo Preparación</label>
+                  <input type="text" class="form-control mt-2 mb-4"  placeholder="">
+                </div>
+              </div>
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1">Unidad de Tiempo</label>
+                  <select class="form-select select">
+                    <option selected disabled>Seleccione Unidad </option>
+                    <option  *ngFor="let doc of time" [value]="doc.id">{{doc.descripcion}}</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1">Porciones</label>
+                  <input type="text" class="form-control mt-2 mb-4"  placeholder="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1"> </label>
+                  <input type="text" class="form-control mt-2 mb-4"  placeholder="1">
+
+                </div>
+              </div>
+              <div class="col col-sm-4 col-md-4 col-lg-4">
+                <div class="form-group">
+                  <label for="precio" class="my-1">Pasos</label>
+                  <input type="text" class="form-control mt-2 mb-4"  placeholder="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttSpace">
+          <button [disabled]="myFormRecipe.invalid" type="submit">Agregar</button>
+          <button type="button">Cancelar</button>
+        </div>
+
+        <div class="form-group">
+          <a class="btn btn-primary" (click)="addIngredients()" )> Agregar Ingrediente </a>
+        </div>
+
+        <div formArrayName="ingredients"
+             *ngFor="let ingredients of ingredients.controls; let i = index">
+          <div [formGroupName]="i" ]>
+            <div class="form-group row">
+              <label class="col-md-1" [attr.for]= "'ingredients' + i">
+                Ingredientes
+              </label>
+              <div class="col-md-3">
+                <input type="text" [attr.id]="'ingredients' + i" class="form-control" formControlName="ingredients">
+              </div>
+              <label class="col-md-1" [attr.for]="'cantidad' + i"> Cantidad </label>
+              <div class="col-md-5">
+                <input type="number" [attr.id]="'cantidad' + i" class="form-control" formControlName="cantidad">
+              </div>
+              <label class="col-md-1" [attr.for]="'unitofmeasure' + i"> Unidad de Medida </label>
+              <div class="col-md-6">
+                <input type="number" [attr.id]="'unitofmeasure' + i" class="form-control" formControlName="unitofmeasure">
+              </div>
+              <div>
+                <button class="btn btn-danger" (click)="removeIngredients(i)"> Remover </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
   </div>
-  <div>
-    <img src="./assets/imageRegister.png">
-  </div>
-  <form [formGroup]="formRecipe" (ngSubmit)="onRegister()" #myFormRecipe="ngForm">
-    <div>
-      <input class="nameProduct form-control" placeholder="Ingrese el título de la receta " formControlName="recipeName" type="text">
-    </div>
-
-    <div>
-      <h6> Categoría </h6>
-      <input type="radio" name="" id="">
-      <label>Desayuno</label>
-      <input type="radio" name="" id="">
-      <label>Almuerzo</label>
-      <input type="radio" name="" id="">
-      <label>Cena</label>
-    </div>
-
-    <div>
-      <h6> Dificultad </h6>
-      <input type="radio" name="" id="">
-      <label>Fácil</label>
-      <input type="radio" name="" id="">
-      <label>Medio</label>
-      <input type="radio" name="" id="">
-      <label>Difícil</label>
-    </div>
-
-    <div class="card">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Ingredientes</label>
-              <select class="form-select select">
-                <option selected disabled>Seleccione el producto </option>
-                <option  *ngFor="let doc of ingredient" [value]="doc.id">{{doc.descripcion}}</option>
-              </select>
-
-            </div>
-          </div>
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Cantidad</label>
-              <input type="text" class="form-control mt-2 mb-4"  placeholder="">
-            </div>
-          </div>
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Unidad</label>
-              <input type="text" class="form-control mt-2 mb-4" id="precio" placeholder="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Tiempo Preparación</label>
-              <input type="text" class="form-control mt-2 mb-4"  placeholder="">
-            </div>
-          </div>
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Unidad de Tiempo</label>
-              <select class="form-select select">
-                <option selected disabled>Seleccione Unidad </option>
-                <option  *ngFor="let doc of time" [value]="doc.id">{{doc.descripcion}}</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Porciones</label>
-              <input type="text" class="form-control mt-2 mb-4"  placeholder="">
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1"> </label>
-              <input type="text" class="form-control mt-2 mb-4"  placeholder="1">
-
-            </div>
-          </div>
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <div class="form-group">
-              <label for="precio" class="my-1">Pasos</label>
-              <input type="text" class="form-control mt-2 mb-4"  placeholder="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="buttSpace">
-      <button [disabled]="myFormRecipe.invalid" type="submit">Agregar</button>
-      <button type="button">Cancelar</button>
-    </div>
-  </form>
-
-
 </div>
-

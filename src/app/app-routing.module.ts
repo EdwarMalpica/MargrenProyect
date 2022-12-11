@@ -18,13 +18,17 @@ const routes: Routes = [
   { path: 'register', component:RegisterComponent},
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
-  { path: "products", component: ProductsComponent },
   { path: 'admin', component:AdminDashboardComponent },
-  { path: "products", component: DashboardProductsComponent },
-  { path: "recipes", component: DashboarRecipesComponent },
   { path: "user", component: UserDashboardComponent },
   {
     path: "dashboard", component: UserDashboardComponent, children: [
+      { path: "products", component: DashboardProductsComponent },
+      { path: "recipes", component: DashboarRecipesComponent },
+
+    ]
+  },
+  {
+    path: "dashboardadmin", component: AdminDashboardComponent, children: [
       { path: "products", component: DashboardProductsComponent },
       { path: "recipes", component: DashboarRecipesComponent },
       { path: 'homeadmin', component:DashboardAdminComponent }
