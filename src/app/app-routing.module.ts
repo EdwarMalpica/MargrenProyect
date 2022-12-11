@@ -8,22 +8,29 @@ import { ProductsComponent } from './products/products.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
-import {RegisterComponent} from "./register/register.component";
+import { RegisterComponent} from "./register/register.component";
+import { AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
+import { OurTeamComponent} from "./our-team/our-team.component";
 
 
 const routes: Routes = [
-  {path: 'recipe', component:RecipeComponent },
-  {path: 'admin', component:DashboardAdminComponent },
-  {path: 'register', component:RegisterComponent},
+  { path: 'recipe', component:RecipeComponent },
+  { path: 'register', component:RegisterComponent},
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
   { path: "products", component: ProductsComponent },
+  { path: 'admin', component:AdminDashboardComponent },
+  { path: "products", component: DashboardProductsComponent },
+  { path: "recipes", component: DashboarRecipesComponent },
+  { path: "user", component: UserDashboardComponent },
   {
     path: "dashboard", component: UserDashboardComponent, children: [
       { path: "products", component: DashboardProductsComponent },
-      { path: "recipes", component: DashboarRecipesComponent }
+      { path: "recipes", component: DashboarRecipesComponent },
+      { path: 'homeadmin', component:DashboardAdminComponent }
     ]
   },
+  { path: "our", component: OurTeamComponent},
   // { path: '**', component: HomeComponent }
   { path: '', component: HomeComponent }
 ];

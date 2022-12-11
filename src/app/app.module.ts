@@ -42,6 +42,7 @@ import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-a
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 
@@ -82,6 +83,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
     MenuNavComponent,
     ImageTeamComponent,
     OurTeamComponent,
+    AdminDashboardComponent,
 
 
 
