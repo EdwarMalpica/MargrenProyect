@@ -66,11 +66,11 @@ export class DashboardProductsComponent implements OnInit {
       { id: 1, name: "Producto 1", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
       { id: 2, name: "Producto 2", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
       { id: 3, name: "Producto 3", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 4, name: "Producto 4", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
+      { id: 4, name: "Producto 4", categoryId: 2, amount: 30, price: 5000, unit: "gramos" },
       { id: 5, name: "Producto 5", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
       { id: 6, name: "Producto 6", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 7, name: "Producto 7", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 8, name: "Producto 8", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
+      { id: 7, name: "Producto 7", categoryId: 1, amount: 20, price: 5000, unit: "gramos" },
+      { id: 8, name: "Producto 8", categoryId: 2, amount: 5, price: 5000, unit: "gramos" },
       { id: 9, name: "Producto 9", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
       { id: 10, name: "Producto 10" }
     ];
@@ -89,6 +89,36 @@ export class DashboardProductsComponent implements OnInit {
 
     }return sum;
   }
+
+  //función calcular producto con mayor unidades
+  calculateProductMoreUnits(){
+    let max  = this.products[0];
+
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].amount > max.amount) {
+        //console.log('Anterior máximo: ' + max + ', nuevo máximo: ' + this.products[i])
+        max = this.products[i];
+      }
+      console.log('valor máximo ' + max.name )
+
+    }
+    return max;
+    }
+
+    //función calcular producto con menor unidades
+    calculateProductMinUnits(){
+      let min  = this.products[0];
+
+      for (let i = 0; i < this.products.length; i++) {
+        if (this.products[i].amount < min.amount) {
+          // console.log('Anterior minimo: ' + min + ', nuevo mínimo: ' + this.products[i])
+          min = this.products[i];
+        }
+        console.log('valor mínimo ' + min )
+
+      }
+      return min;
+      }
 
 
 
