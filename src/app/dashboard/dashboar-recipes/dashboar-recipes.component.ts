@@ -21,7 +21,7 @@ export class DashboarRecipesComponent implements OnInit {
 
   public filterRecipe(): void {
     const text: string = this.searchText.toLocaleLowerCase();
-    this.filteredRecipes = this.recipes.filter(recipes => recipes.name.toLowerCase().includes(text));
+    this.filteredRecipes = this.recipes.filter(recipes => recipes.nameRecipe.toLowerCase().includes(text));
   }
 
   public openRecipeCreator(): void {
@@ -29,7 +29,7 @@ export class DashboarRecipesComponent implements OnInit {
   }
 
   public openRecipeEditor(recipe: Recipe): void {
-    const modalRef = this.modalService.open(RecipeComponent, { centered: true, scrollable: true })
+    const modalRef = this.modalService.open(RecipeComponent, { centered: true,scrollable:false, size: "lg" })
     modalRef.componentInstance.recipes = recipe;
   }
 
@@ -43,7 +43,7 @@ export class DashboarRecipesComponent implements OnInit {
             break;
           }
         }
-        this.filteredRecipes = this.recipes.filter(product => product.name.includes(""));
+        this.filteredRecipes = this.recipes.filter(recipe => recipe.nameRecipe.includes(""));
         this.searchText = "";
       }
     });
@@ -57,18 +57,18 @@ export class DashboarRecipesComponent implements OnInit {
     //   this.products = products;
     // });
     this.recipes = [
-      { id: 1, name: "Producto 1", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 2, name: "Producto 2", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 3, name: "Producto 3", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 4, name: "Producto 4", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 5, name: "Producto 5", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 6, name: "Producto 6", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 7, name: "Producto 7", categoryId: 1, amount: 10, price: 5000, unit: "gramos" },
-      { id: 8, name: "Producto 8", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 9, name: "Producto 9", categoryId: 2, amount: 10, price: 5000, unit: "gramos" },
-      { id: 10, name: "Producto 10" }
+      { id: 1, nameRecipe: "Receta 1", categoryId: 1, dificult: 1 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 2", categoryId: 2, dificult: 2 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 3", categoryId: 3, dificult: 2 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 4", categoryId: 1, dificult: 3 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 5", categoryId: 3, dificult: 3 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 7", categoryId: 2, dificult: 1 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 8", categoryId: 2, dificult: 1 , timeRecipe: 10, porciones: 10 },
+      { id: 1, nameRecipe: "Receta 9", categoryId: 3, dificult: 2 , timeRecipe: 10, porciones: 10 },
+      { id: 10, nameRecipe: "Receta 10" }
+
     ];
-    this.filteredRecipes = this.recipes.filter(recipes => recipes.name.includes(""));
+    this.filteredRecipes = this.recipes.filter(recipes => recipes.nameRecipe.includes(""));
   }
 
 }

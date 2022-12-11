@@ -4,13 +4,15 @@ import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-
 import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { ProductsComponent } from './products/products.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
 import { RegisterComponent} from "./register/register.component";
 import { AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
 import { OurTeamComponent} from "./our-team/our-team.component";
+import {ButtomInteractiveComponent} from "./buttom-interactive/buttom-interactive.component";
+import {DashboardVendedorComponent} from "./dashboard/dashboard-vendedor/dashboard-vendedor.component";
+import {DashboardConsumidorComponent} from "./dashboard/dashboard-consumidor/dashboard-consumidor.component";
 
 
 const routes: Routes = [
@@ -20,6 +22,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: 'admin', component:AdminDashboardComponent },
   { path: "user", component: UserDashboardComponent },
+  { path: "buttom", component: ButtomInteractiveComponent},
   {
     path: "dashboard", component: UserDashboardComponent, children: [
       { path: "products", component: DashboardProductsComponent },
@@ -31,7 +34,9 @@ const routes: Routes = [
     path: "dashboardadmin", component: AdminDashboardComponent, children: [
       { path: "products", component: DashboardProductsComponent },
       { path: "recipes", component: DashboarRecipesComponent },
-      { path: 'homeadmin', component:DashboardAdminComponent }
+      { path: 'homeadmin', component:DashboardAdminComponent },
+      { path: "vendedor", component: DashboardVendedorComponent},
+      { path: "consumidor", component: DashboardConsumidorComponent}
     ]
   },
   { path: "our", component: OurTeamComponent},

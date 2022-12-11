@@ -35,7 +35,7 @@ export class RecipeComponent implements OnInit {
 
   ngOnInit(): void {
     this.formRecipe = this.formBuilder.group({
-      recipeName: [],
+      nameRecipe: [],
       unidad:[],
       steps:[],
     });
@@ -48,6 +48,7 @@ export class RecipeComponent implements OnInit {
     dificult: '',
     nameIngredient: '',
     cantidad: '',
+    unidadIngre : '',
     timeRecipe: '',
     unidad: '',
     cantidadPersonas: '',

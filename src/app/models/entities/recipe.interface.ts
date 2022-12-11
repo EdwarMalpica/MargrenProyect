@@ -1,10 +1,16 @@
 export interface Recipe {
   id: number;
-  categoryId?: number;
-  name: string;
-  price?: number;
+  nameRecipe: string;
   description?: string;
-  img?: string;
-  amount?: number;
-  unit?: string;
+  categoryId?: number;
+  dificult?: number;
+  nameIngredients?: string;
+  cantidad?: number;
+  UnidadIngre?: string;
+  timeRecipe?: number;
+  unidad?: string;
+  porciones?: number;
+  pasos?: string;
+
 }
+
