@@ -1,16 +1,15 @@
 .frame5{
   position: relative;
   align-items: center;
+  height: max-content;
 }
 .bg-primary{
-background-color: #30C786 ;
+  background-color: #30C786 ;
 }
 
 $primary: #30C786;
 
 .dashboard-card{
-
-  height: 103px;
   backdrop-filter: blur(2px);
   border-radius: 5px;
   padding: 20px;
