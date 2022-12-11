@@ -9,7 +9,7 @@ import {FormArray, FormBuilder, FormGroup} from "@angular/forms";
 export class RecipeComponent implements OnInit {
 
   formRecipe !: FormGroup
-  ingredient = [{
+  ingredientes = [{
     id: 1,
     descripcion : "manzana de agua"
   },
@@ -32,12 +32,7 @@ export class RecipeComponent implements OnInit {
     }
   ]
   constructor(private formBuilder: FormBuilder) { }
-  get ingredients(){
-    return this.registerForms.get("ingredients") as FormArray;
-  }
-  registerForms = this.formBuilder.group({
-    ingredients: this.formBuilder.array([])
-  })
+
   ngOnInit(): void {
     this.formRecipe = this.formBuilder.group({
       recipeName: [],
@@ -46,18 +41,6 @@ export class RecipeComponent implements OnInit {
     });
   }
 
-  addIngredients(){
-    const ingredientsFormGroup = this.formBuilder.group({
-      ingredient: " ",
-      cantidad: " ",
-      unitofmeasure: ""
-    });
-    this.ingredients.push(ingredientsFormGroup);
-  }
-
-  removeIngredients(indice:number){
-    this.ingredients.removeAt(indice);
-  }
 
   register ={
     nameRecipe: '',
@@ -73,10 +56,6 @@ export class RecipeComponent implements OnInit {
 
   onRegister(){
     console.log(this.register);
-  }
-
-  refresh(){
-    this.ingredients.controls.splice(0,this.ingredients.length);
   }
 
 }

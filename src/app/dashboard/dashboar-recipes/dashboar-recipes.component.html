@@ -1,5 +1,5 @@
 <div data-spy="scroll" data-bs-target="#scroll-spy">
-  <div class="frame5">
+  <div class="frame6">
     <h1>Recetas</h1>
     <p>Sección donde encontrarás los productos que se han agregado...</p>
 
@@ -10,7 +10,7 @@
       <div class="col-12 col-md-3 p-2 ">
         <div class="dashboard-card dashboard-card1 ">
           Total productos<br>
-          <h3>{{ products.length }} unidades</h3>
+          <h3>{{ recipes.length }} unidades</h3>
         </div>
       </div>
 
@@ -21,8 +21,6 @@
       <div class="col-12 col-md-3 p-2">
         <div class="dashboard-card dashboard-card2 ">
 
-          Precio total neto<br>
-          <h3>{{calculatenetPrice()|currency}}</h3>
         </div>
       </div>
 
@@ -61,14 +59,14 @@
       <div class="card-header">
         <div class="row">
           <div class="col-9">
-            <button type="button" class="btn btn-primary button-principal" (click)="openProductCreator()">
+            <button type="button" class="btn btn-primary button-principal" (click)="openRecipeCreator()">
               <i class="fa fa-plus"></i>
-              Agregar producto
+              Agregar receta
             </button>
           </div>
           <div class="col-3">
-            <input class="form-control" [(ngModel)]="searchText" (keyup)="filterProducts()"
-                   placeholder="Buscar producto..." type="text">
+            <input class="form-control" [(ngModel)]="searchText" (keyup)="filterRecipe()"
+                   placeholder="Buscar receta..." type="text">
           </div>
         </div>
       </div>
@@ -88,7 +86,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let product of filteredProducts; let i = index">
+          <tr *ngFor="let product of filteredRecipes; let i = index">
             <th scope="row">{{ i + 1 }}</th>
             <td>{{ product.name }}</td>
             <td>{{ product.categoryId }}</td>
@@ -100,11 +98,11 @@
                 <button type="button" class="btn btn-outline-primary">
                   <i class="fa fa-search"></i>
                 </button>
-                <button type="button" class="btn btn-outline-primary" (click)="openProductEditor(product)">
+                <button type="button" class="btn btn-outline-primary" (click)="openRecipeEditor(product)">
                   <i class="fa fa-pencil"></i>
                 </button>
                 <button type="button" class="btn btn-outline-danger"
-                        (click)="removeProduct(product, modalProductEliminator)">
+                        (click)="removeRecipe(product, modalProductEliminator)">
                   <i class="fa fa-trash"></i>
                 </button>
               </div>

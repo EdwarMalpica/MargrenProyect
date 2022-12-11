@@ -9,10 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 50px;
-  gap: 57px;
 
-  width: 50%;
+  height: min-content;
+
 
   border: 1px solid #D4EEE2;
   border-radius: 4px;
@@ -42,23 +41,17 @@ div{
 h6{
   font-family: 'Quicksand';
   font-style: normal;
-  line-height: 52px;
+  line-height: 30px;
   justify: center;
   alignment: center;
 
   color: black;
 
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 img{
   width: 60px;
   height: 60px;
-  flex: none;
-  flex-grow: 0;
 }
 button{
   flex-direction: row;
@@ -70,15 +63,10 @@ button{
   gap: 6px;
   border: none;
   color: #FFFFFF;
-  width: 97px;
-  height: 44px;
 
   background: linear-gradient(315deg, #19C179 -0.12%, #4FE58A 99.88%);
   border-radius: 4px;
 
-  flex: none;
-  order: 4;
-  flex-grow: 0;
 }
 .buttSpace{
   display: flex;
@@ -91,10 +79,9 @@ button{
   flex-direction: row;
   align-items: center;
   padding: 0px 26px;
-  gap: 12px;
 
-  width: 200px;
-  height: 44px;
+  width: 710px;
+  height: 30px;
   margin: 10px;
 
   background: #FFFFFF;
@@ -102,9 +89,6 @@ button{
   border: 1px solid #D4EEE2;
   border-radius: 4px;
 
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 .select{
   box-sizing: border-box;
@@ -115,16 +99,13 @@ button{
 
 
 
-  width: 180px;
+  width: 100px;
   height: 44px;
   margin: 10px;
 
   border: 1px solid #D4EEE2;
   border-radius: 4px;
 
-  flex: none;
-  order: 3;
-  flex-grow: 0;
 }
 .card{
   display: flex;
@@ -141,7 +122,6 @@ button{
 .labelPrin{
   justify-items: center;
   align-items: center;
-  margin-left: 40%;
   color: red;
 
 }
@@ -170,9 +150,6 @@ button{
   border: 1px solid #D4EEE2;
   border-radius: 4px;
 
-  flex: none;
-  order: 3;
-  flex-grow: 0;
 }
 .unit{
   box-sizing: border-box;
@@ -192,9 +169,7 @@ button{
   border: 1px solid #D4EEE2;
   border-radius: 4px;
 
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+
 }
 
 input{

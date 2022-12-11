@@ -43,6 +43,7 @@ import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { ButtomInteractiveComponent } from './buttom-interactive/buttom-interactive.component';
 
 
 
@@ -84,6 +85,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     ImageTeamComponent,
     OurTeamComponent,
     AdminDashboardComponent,
+    ButtomInteractiveComponent,
 
 
 
