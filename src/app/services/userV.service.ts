@@ -1,23 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { User } from '../models/entities/user.interface';
+import { UserVendedor } from '../models/entities/userVendedore.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserVService {
 
   public api: string = "/user";
 
   constructor(private http: HttpClient) { }
 
-  public getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.api);
+  public getUsers(): Observable<UserVendedor[]> {
+    return this.http.get<UserVendedor[]>(this.api);
   }
 
-  public getUser(userId: number): Observable<User> {
-    return this.http.get<User>(this.api + "?userId=" + userId);
+  public getUser(userId: number): Observable<UserVendedor> {
+    return this.http.get<UserVendedor>(this.api + "?userId=" + userId);
   }
 
   public removeUser(userId: number): Observable<boolean> {

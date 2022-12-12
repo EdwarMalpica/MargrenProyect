@@ -1,0 +1,33 @@
+.frame6{
+  position: relative;
+  align-items: center;
+  height: max-content;
+}
+.bg-primary{
+  background-color: #30C786 ;
+}
+
+
+.dashboard-card{
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  border: 1px black;
+}
+
+.dashboard-card1{
+  background-color: #30C786;
+}
+
+.dashboard-card2{
+  background-color: #47CD94;
+}
+
+.dashboard-card3{
+  background-color: #5ED4A1;
+}
+
+.dashboard-card4{
+  background-color: #75DAAF;
+}

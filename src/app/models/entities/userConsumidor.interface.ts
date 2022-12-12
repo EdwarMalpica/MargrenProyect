@@ -1,8 +1,8 @@
-export interface User {
+export interface UserConsumidor {
   id: number;
   name: string;
   lastname?: string;
-  typeDocument?: number;
+  typeDocument?: string;
   numDocument?: number;
   email?: string;
 }
