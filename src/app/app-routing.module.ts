@@ -16,6 +16,7 @@ import { AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.compon
 import {ButtomInteractiveComponent} from "./buttom-interactive/buttom-interactive.component";
 import {DashboardVendedorComponent} from "./dashboard/dashboard-vendedor/dashboard-vendedor.component";
 import {DashboardConsumidorComponent} from "./dashboard/dashboard-consumidor/dashboard-consumidor.component";
+import { MapViewComponent } from './map-view/map-view.component';
 
 
 
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'admin', component:AdminDashboardComponent },
   { path: "user", component: UserDashboardComponent },
   { path: "buttom", component: ButtomInteractiveComponent},
+  { path: "map", component: MapViewComponent},
 
   {
     path: "dashboard", component: UserDashboardComponent, children: [
