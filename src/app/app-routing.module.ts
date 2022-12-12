@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
-
+import {ProductsComponent} from "./products/products.component";
 import {RegisterComponent} from "./register/register.component";
 import {OurTeamComponent} from "./our-team/our-team.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
