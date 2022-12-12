@@ -59,4 +59,7 @@ export class RecipeComponent implements OnInit {
     console.log(this.register);
   }
 
+  close() {
+    
+  }
 }
