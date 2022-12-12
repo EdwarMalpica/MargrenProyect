@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormArray, FormBuilder, FormGroup} from "@angular/forms";
+import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-recipe',
@@ -31,7 +32,8 @@ export class RecipeComponent implements OnInit {
       descripcion : "horas"
     }
   ]
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,
+              private modalService:NgbModal) { }
 
   ngOnInit(): void {
     this.formRecipe = this.formBuilder.group({
@@ -55,6 +57,21 @@ export class RecipeComponent implements OnInit {
     steps: '',
   }
 
+  private buildForm(): void {
+    this.formRecipe = new FormGroup({
+      nameRecipe: new FormControl(this.register.nameRecipe, [Validators.required]),
+      category: new FormControl(this.register.category, [Validators.required]),
+      dificult: new FormControl(this.register.dificult, [Validators.required]),
+      nameIngredients: new FormControl(this.register.nameIngredient, [Validators.required]),
+      cantidad: new FormControl(this.register.cantidad, [Validators.required]),
+      unidadIngre: new FormControl(this.register.unidadIngre, [Validators.required]),
+      timeRecipe: new FormControl(this.register.timeRecipe, [Validators.required]),
+      unidad: new FormControl(this.register.unidad, [Validators.required]),
+      cantidadPersonas: new FormControl(this.register.cantidadPersonas, [Validators.required]),
+      steps: new FormControl(this.register.steps, [Validators.required])
+    });
+  }
+
   onRegister(){
     console.log(this.register);
   }
@@ -63,4 +80,5 @@ export class RecipeComponent implements OnInit {
   public close(): void {
     this.modalService.dismissAll();
   }
+
 }

@@ -53,9 +53,7 @@ export class DashboarRecipesComponent implements OnInit {
   }
 
   private loadRecipes(): void {
-    // this.productsService.getProducts().subscribe((products: Product[]) => {
-    //   this.products = products;
-    // });
+
     this.recipes = [
       { id: 1, nameRecipe: "Receta 1", categoryId: 1, dificult: 1 , timeRecipe: 10, porciones: 10 },
       { id: 1, nameRecipe: "Receta 2", categoryId: 2, dificult: 2 , timeRecipe: 10, porciones: 10 },
