@@ -38,6 +38,10 @@ import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-a
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { ButtomInteractiveComponent } from './buttom-interactive/buttom-interactive.component';
+import { DashboardVendedorComponent } from './dashboard/dashboard-vendedor/dashboard-vendedor.component';
+import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/dashboard-consumidor.component';
 
 
 
@@ -78,7 +82,12 @@ import { OurTeamComponent } from './our-team/our-team.component';
     MenuNavComponent,
     ImageTeamComponent,
     OurTeamComponent,
+    AdminDashboardComponent,
+    ButtomInteractiveComponent,
+    DashboardVendedorComponent,
+    DashboardConsumidorComponent,
     LoginComponent
+
 
 
 
