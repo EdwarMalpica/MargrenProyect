@@ -1,16 +1,9 @@
-
-.footer{
-  position:absolute;
-  top: 1000px;
-  width: 100%;
-  height: 1000px;
-  background: #FFFFFF;
-}
 footer{
+  position:absolute;
   border-top: 1px solid rgba(50, 50, 50, 0.3);
+
   width: 100%;
   height: 300px;
-  top:470px;
-
-
+  background: #FFFFFF;
+  bottom:auto;
 }

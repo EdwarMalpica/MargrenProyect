@@ -1,0 +1,92 @@
+<div data-spy="scroll" data-bs-target="#scroll-spy">
+  <div class="frame6">
+    <h1>Consumidor</h1>
+    <p>Sección donde encontrarás los consumidores existentes...</p>
+
+    <!-- Contenedor: Tarjetas -->
+    <div class="row">
+
+      <!-- Contenedor: Tarjeta total productos -->
+      <div class="col-12 col-md-3 p-2 ">
+        <div class="dashboard-card dashboard-card1 ">
+          Total Consumidores<br>
+          <h3>{{ userConsumidor.length }} Consumidores</h3>
+        </div>
+      </div>
+
+
+      <!-- Contenedor: Tabla productos -->
+      <div class="card">
+
+        <!-- Contenedor: Cabecera -->
+        <div class="card-header">
+          <div class="row">
+
+            <div class="col-3">
+              <input class="form-control" [(ngModel)]="searchText" (keyup)="filterUser()"
+                     placeholder="Buscar vendedor..." type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor: Tabla -->
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Tipo Documento</th>
+              <th scope="col">"# Documento"</th>
+              <th scope="col">Email</th>
+              <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let user of filteredUser; let i = index">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ user.name}}</td>
+              <td>{{ user.lastname }}</td>
+              <td>{{ user.typeDocument }}</td>
+              <td>{{ user.numDocument }}</td>
+              <td>{{ user.email }}</td>
+              <td style="text-align: center;">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-primary">
+                    <i class="fa fa-search"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-danger"
+                          (click)="removeUser(user, modalUserEliminator)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./Contenedor: Tabla -->
+
+      </div>
+      <!-- ./Contenedor: Tabla productos -->
+
+      <!-- Modal: Eliminador de productos -->
+      <ng-template #modalUserEliminator let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-title">Eliminar Consumidor</h4>
+          <button type="button" class="btn-close" aria-describedby="modal-title"
+                  (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Está seguro de eliminar el vendedor?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" (click)="modal.close(false)">Cancelar</button>
+          <button type="button" class="btn btn-danger" (click)="modal.close(true)">Aceptar</button>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
