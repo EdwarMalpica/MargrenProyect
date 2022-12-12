@@ -7,12 +7,16 @@ import { LoginComponent } from './login/login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
-import { RegisterComponent} from "./register/register.component";
+
+import {RegisterComponent} from "./register/register.component";
+import {OurTeamComponent} from "./our-team/our-team.component";
+import {AboutUsComponent} from "./about-us/about-us.component";
+
 import { AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
-import { OurTeamComponent} from "./our-team/our-team.component";
 import {ButtomInteractiveComponent} from "./buttom-interactive/buttom-interactive.component";
 import {DashboardVendedorComponent} from "./dashboard/dashboard-vendedor/dashboard-vendedor.component";
 import {DashboardConsumidorComponent} from "./dashboard/dashboard-consumidor/dashboard-consumidor.component";
+
 
 
 const routes: Routes = [
@@ -20,9 +24,15 @@ const routes: Routes = [
   { path: 'register', component:RegisterComponent},
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
+
+  { path: "our-team", component: OurTeamComponent },
+  { path: "about-us", component: AboutUsComponent },
+  { path: "products", component: ProductsComponent },
+
   { path: 'admin', component:AdminDashboardComponent },
   { path: "user", component: UserDashboardComponent },
   { path: "buttom", component: ButtomInteractiveComponent},
+
   {
     path: "dashboard", component: UserDashboardComponent, children: [
       { path: "products", component: DashboardProductsComponent },

@@ -1,0 +1,52 @@
+<div class="recipeView">
+    <div class="row">
+        <div class="col-8" style="padding-left:100px ;">
+            <div class="scrollBar">
+                <li  *ngFor="let recipes of recipeList"style="list-style: none;" > 
+                    <button class="btnRecipes">
+                        {{recipes.nameRecipe}} 
+                        <img src="assets/iconSigno.png" alt="" style="position: absolute; right: 10px;">
+                    </button>
+                </li>
+            </div>                
+        </div>
+        <div class="col-4" style="padding-right:6% ;">
+            <div class="groupSearch">
+            <div class="buscador">
+                <form action="#">
+                    <input type="image" src="assets/iconBuscar.png" class="image_buscar">
+                    <input type="text" class="buscar"  placeholder="Buscar">
+                    <input type="image" src="assets/iconFlecha.png" class="image_flecha">
+                </form>
+            </div>
+            <div class="groupcategorias">
+                <p class="filtros"> Categorias</p>
+                <HR width="110%">
+                <li  *ngFor="let categories of categoryList"style="list-style: none;" > 
+                    <button class="btnCategorias">
+                        <img [src]="categories.path" alt="">
+                        {{categories.category}}
+                        <span class="text-quantity">{{categories.quantity}}</span>
+                    </button>
+                </li>
+            </div>
+            <div class="groupdificultad">
+                <p class="filtros">Dificultad</p>
+                <HR width="110%">
+
+                <form action="#">
+                    <li  *ngFor="let metric of dificultyList"style="list-style: none; padding-bottom:6px;" > 
+                        <input class="form-check-input" type="checkbox" value="" id= {{metric.dificulty}}>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            {{metric.dificulty}}
+                        </label>
+                    </li> 
+                </form>
+                <div>
+                    <button class="btnFiltrar" >
+                        Filtrar
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
