@@ -19,7 +19,6 @@ import { CompanieComponent } from './companie/companie.component';
 import { AccountComponent } from './account/account.component';
 import { DownloadComponent } from './download/download.component';
 import { CopyrightComponent } from './copyright/copyright.component';
-
 import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
@@ -32,11 +31,8 @@ import { LabelComponent } from './label/label.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-recipes.component';
-
-
 import { RecipeComponent } from './recipe/recipe.component';
 import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
@@ -90,6 +86,8 @@ import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/d
     ButtomInteractiveComponent,
     DashboardVendedorComponent,
     DashboardConsumidorComponent,
+    LoginComponent
+
 
 
 
