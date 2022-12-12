@@ -59,7 +59,8 @@ export class RecipeComponent implements OnInit {
     console.log(this.register);
   }
 
-  close() {
-    
+  //Funcionalidad Botón cerrar
+  public close(): void {
+    this.modalService.dismissAll();
   }
 }
