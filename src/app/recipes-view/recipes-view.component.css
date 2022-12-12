@@ -1,0 +1,162 @@
+.recipeView{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 26px;
+    font-family: 'Quicksand';
+}
+
+.scrollBar{
+    height: 500px;
+    width: 850px;
+    border: 1px solid 27CA7D;
+    overflow: auto;
+}
+
+.groupSearch{
+    justify-content: center;
+    padding: 0px 80px;
+}
+
+.groupRecipes{
+    padding: 0px 26px;
+    position: absolute;
+    width: 1010px;
+    height: 629px;
+    left: 36px;
+    top: 371px;
+}
+
+div.buscador {
+	border:1px solid #d7d7d7;
+	padding: 4px;
+	height: 30px;
+	width: 230px;
+}
+input.buscar {
+	border: 0px;
+	width: 180px;
+	position: relative;
+	background: transparent;
+	outline: none;
+	bottom: 4px;
+	padding: 3px;
+}
+input.image_buscar {
+	width: 20px;
+	border: 0px;
+	position: relative;
+}
+
+input.image_flecha {
+	width: 20px;
+	border: 0px;
+	position: relative;
+}
+
+.filtros{
+    margin-top: 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #253D4E;
+}
+
+.btnCategorias{
+    position: relative;
+    flex-direction: column;
+    align-items: left;
+    padding: 4px;   
+    width: 230px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #E9ECF4;
+    border-radius: 4px;
+}
+
+.text-quantity{
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    background: #E9ECF4;
+    border-radius: 50px;
+}
+
+.btnFiltrar{
+    margin-top: 20px;
+    align-items: center;
+    padding: 4px 20px;
+    width: 230px;
+    height: 20 px;
+    background: #D4EEE2;
+    border-radius: 4px;
+    border: none;
+}
+
+.btnRecipes{
+    position: relative;
+    margin: 10px;
+    width: 758px;
+    height: 50px;
+    padding-left:  20px;
+    background: #FFFFFF;
+    border: 0.5px solid #939393;
+    border-radius: 8px;
+    text-align: left;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 20px;
+    color: #253D4E;
+}
+
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 1px;
+    cursor: pointer;
+    padding: 1px;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 1px solid #27CA7D;
+    border-radius: 4px;
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    padding-left: 3px;
+    padding-bottom: 9px;
+    margin-right: 2px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before{
+    transform: scale(0);
+    
+  }
+  
+  input[type=checkbox]:checked + label::before{
+    background-color: #27CA7D;
+    border-color: #27CA7D;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label::before {
+    transform: scale(0);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label::after {
+    transform: scale(0);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+

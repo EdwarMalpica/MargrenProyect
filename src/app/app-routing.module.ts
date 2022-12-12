@@ -9,6 +9,9 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { RecipeComponent} from "./recipe/recipe.component";
 import { DashboardAdminComponent} from "./dashboard/dashboard-admin/dashboard-admin.component";
 import {RegisterComponent} from "./register/register.component";
+import {OurTeamComponent} from "./our-team/our-team.component";
+import {AboutUsComponent} from "./about-us/about-us.component";
+
 
 
 const routes: Routes = [
@@ -17,6 +20,8 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
+  { path: "our-team", component: OurTeamComponent },
+  { path: "about-us", component: AboutUsComponent },
   { path: "products", component: ProductsComponent },
   {
     path: "dashboard", component: UserDashboardComponent, children: [

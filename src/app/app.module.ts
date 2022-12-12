@@ -42,6 +42,9 @@ import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-a
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { RecipesViewComponent } from './recipes-view/recipes-view.component';
+import { RecipeViewStepsComponent } from './recipe-view-steps/recipe-view-steps.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -82,6 +85,9 @@ import { OurTeamComponent } from './our-team/our-team.component';
     MenuNavComponent,
     ImageTeamComponent,
     OurTeamComponent,
+    RecipesViewComponent,
+    RecipeViewStepsComponent,
+    AboutUsComponent,
 
 
 
