@@ -3,5 +3,6 @@ export interface home {
   name: string;
   image: string;
   description: string;
+  price: number;
 }
 

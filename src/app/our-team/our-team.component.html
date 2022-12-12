@@ -1,37 +1,39 @@
-<div class="our-team">
-    <!-- <app-card-ourteam [path]="'/assets/imgNatalia.png'",[namePerson]="'Natalia'",[rol]="'Frontend'",[text]="'/Más información'"></app-card-ourteam> -->
-    
-    <div class="row" style="padding-top:50px;">
-    <div class="col-6" style="text-align: center;">
-        <div style="display:flex;justify-content: center;">
-        <img class="image-profile" src="/assets/imgEdward.png" alt="">
-         </div>
-        <p class="p-name">Edward Malpica</p>
-        <p class="p-rol">Backend</p>
-        <button class="btn-team">Leer más</button>
-    </div>
+<div data-spy="scroll" data-bs-target="#scroll-spy">
+  <div class="our-team">
+      <!-- <app-card-ourteam [path]="'/assets/imgNatalia.png'",[namePerson]="'Natalia'",[rol]="'Frontend'",[text]="'/Más información'"></app-card-ourteam> -->
 
-    <div class="col-6" style="padding-right:10% ;">
-        <span class="title">Mejor empleado</span><br>
-        <span class="subtitle">Lider</span><br>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eius, quidem dolor perspiciatis culpa ducimus neque ut vel fugiat debitis enim pariatur similique. At aliquam accusantium fugiat eaque totam dolorum?</p>
-    </div>
-    </div>
+      <div class="row" style="padding-top:50px;">
+      <div class="col-6" style="text-align: center;">
+          <div style="display:flex;justify-content: center;">
+          <img class="image-profile" src="/assets/imgEdward.png" alt="">
+           </div>
+          <p class="p-name">Edward Malpica</p>
+          <p class="p-rol">Backend</p>
+          <button class="btn-team">Leer más</button>
+      </div>
 
-    <div class="row">
-        <ul style="display: flex;list-style: none;justify-content: center;" >
-            <li  *ngFor="let namePerson of personList"> 
-                <div style="display:flex;justify-content: center;">
-                    <img class="image-profile" [src]= "namePerson.path" alt="">
-                </div>
-                <p class="p-name">{{namePerson.name}}</p>
-                <p class="p-rol">{{namePerson.rol}}</p>
-                <button class="btn-team">Leer más</button>
-            </li>
-        </ul>
-    </div>
+      <div class="col-6" style="padding-right:10% ;">
+          <span class="title">Mejor empleado</span><br>
+          <span class="subtitle">Lider</span><br>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eius, quidem dolor perspiciatis culpa ducimus neque ut vel fugiat debitis enim pariatur similique. At aliquam accusantium fugiat eaque totam dolorum?</p>
+      </div>
+      </div>
 
- 
+      <div class="row">
+          <ul style="display: flex;list-style: none;justify-content: center;" >
+              <li  *ngFor="let namePerson of personList">
+                  <div style="display:flex;justify-content: center;">
+                      <img class="image-profile" [src]= "namePerson.path" alt="">
+                  </div>
+                  <p class="p-name">{{namePerson.name}}</p>
+                  <p class="p-rol">{{namePerson.rol}}</p>
+                  <button class="btn-team">Leer más</button>
+              </li>
+          </ul>
+      </div>
 
 
+
+
+  </div>
 </div>

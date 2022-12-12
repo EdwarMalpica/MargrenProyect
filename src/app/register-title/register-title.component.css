@@ -1,19 +1,5 @@
-.registerTitle{
-    width: 168px;
-    height: 53px;
-/* H2 */
-
-
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    }
-
-.registerTitle h2{
-
+h2{
+    justify-content: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;

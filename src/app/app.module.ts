@@ -19,7 +19,6 @@ import { CompanieComponent } from './companie/companie.component';
 import { AccountComponent } from './account/account.component';
 import { DownloadComponent } from './download/download.component';
 import { CopyrightComponent } from './copyright/copyright.component';
-
 import { RegisterComponent } from './register/register.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
 import { InputTextComponent } from './input-text/input-text.component';
@@ -32,19 +31,22 @@ import { LabelComponent } from './label/label.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { DashboardProductsComponent } from './dashboard/dashboard-products/dashboard-products.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { DashboarRecipesComponent } from './dashboard/dashboar-recipes/dashboar-recipes.component';
-
-
 import { RecipeComponent } from './recipe/recipe.component';
 import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-admin.component';
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+
 import { RecipesViewComponent } from './recipes-view/recipes-view.component';
 import { RecipeViewStepsComponent } from './recipe-view-steps/recipe-view-steps.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { ButtomInteractiveComponent } from './buttom-interactive/buttom-interactive.component';
+import { DashboardVendedorComponent } from './dashboard/dashboard-vendedor/dashboard-vendedor.component';
+import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/dashboard-consumidor.component';
+
 
 
 
@@ -88,6 +90,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
     RecipesViewComponent,
     RecipeViewStepsComponent,
     AboutUsComponent,
+    AdminDashboardComponent,
+    ButtomInteractiveComponent,
+    DashboardVendedorComponent,
+    DashboardConsumidorComponent,
+    LoginComponent
+
+
 
 
 
