@@ -38,7 +38,6 @@ import { DashboardAdminComponent } from './dashboard/dashboard-admin/dashboard-a
 import {MenuNavAdminComponent} from "./menu-nav-admin/menu-nav-admin.component";
 import { ImageTeamComponent } from './image-team/image-team.component';
 import { OurTeamComponent } from './our-team/our-team.component';
-
 import { RecipesViewComponent } from './recipes-view/recipes-view.component';
 import { RecipeViewStepsComponent } from './recipe-view-steps/recipe-view-steps.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -46,7 +45,13 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { ButtomInteractiveComponent } from './buttom-interactive/buttom-interactive.component';
 import { DashboardVendedorComponent } from './dashboard/dashboard-vendedor/dashboard-vendedor.component';
 import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/dashboard-consumidor.component';
+
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
+
+import { MapViewComponent } from './map-view/map-view.component';
+import { MarketMapSellerComponent } from './market-map-seller/market-map-seller.component';
+
+
 
 
 
@@ -96,6 +101,11 @@ import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.compo
     DashboardConsumidorComponent,
     LoginComponent,
     BuyerDashboardComponent,
+    MapViewComponent,
+    MarketMapSellerComponent
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -104,6 +114,7 @@ import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.compo
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    
 
   ],
   providers: [],

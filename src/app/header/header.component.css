@@ -6,7 +6,6 @@
     margin-bottom: -1px;
 
 }
-
 @media(max-width:500px){
     position: absolute;
     width: 100%;
@@ -14,3 +13,4 @@
     background: #FFFFFF;
 
 }
+

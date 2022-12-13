@@ -21,6 +21,8 @@ import {DashboardVendedorComponent} from "./dashboard/dashboard-vendedor/dashboa
 import {DashboardConsumidorComponent} from "./dashboard/dashboard-consumidor/dashboard-consumidor.component";
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
 import { RecipeViewStepsComponent } from './recipe-view-steps/recipe-view-steps.component';
+import { MapViewComponent } from './map-view/map-view.component';
+
 
 
 
@@ -41,6 +43,9 @@ const routes: Routes = [
   { path: "buttom", component: ButtomInteractiveComponent},
   { path: "recipesView", component:RecipesViewComponent},
   { path: "recipeViewStep/:id", component: RecipeViewStepsComponent},
+
+  { path: "map", component: MapViewComponent},
+
 
   {
     path: "dashboard", component: UserDashboardComponent, children: [
