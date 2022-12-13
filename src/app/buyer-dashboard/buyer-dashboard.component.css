@@ -1,0 +1,72 @@
+.user-dashboard{
+    position: relative;
+    width: 100%;
+    margin-top: 26px;
+    font-family: 'Quicksand';
+}
+
+.subtitle1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+}
+
+.subtitle2{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    color: #27CA7D;
+}
+
+.show-products{
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 800px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 0.5px solid #939393;
+    border-radius: 8px;
+}
+
+.lblProduct{
+    padding: 18px 0px;
+    width: 429px;
+    height: 70px;
+    background: #FFFFFF;
+    border-bottom: 0.5px dashed #939393;
+}
+
+.scrollBar{
+    border: 1px solid 27CA7D;
+    overflow: auto;
+    padding: 14px;
+    margin-left: 120px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 900px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 0.5px solid #939393;
+    border-radius: 8px;
+}
+
+.bntShowInfo{
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 0.5px solid #1bcf99;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #27CA7D;
+}

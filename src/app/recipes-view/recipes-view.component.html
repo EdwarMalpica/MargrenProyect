@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-8" style="padding-left:100px ;">
             <div class="scrollBar">
-                <li  *ngFor="let recipes of recipeList"style="list-style: none;" > 
-                    <button class="btnRecipes">
+                <li  *ngFor="let recipes of recipeListAux" style="list-style: none;" > 
+                    <button class="btnRecipes" (click)="selectRecipeStep(recipes.id)">
                         {{recipes.nameRecipe}} 
                         <img src="assets/iconSigno.png" alt="" style="position: absolute; right: 10px;">
                     </button>
@@ -23,12 +23,14 @@
                 <p class="filtros"> Categorias</p>
                 <HR width="110%">
                 <li  *ngFor="let categories of categoryList"style="list-style: none;" > 
-                    <button class="btnCategorias">
+                    <button class="btnCategorias" (click)="filterType(categories.id)" value = {{categories.category}}>
                         <img [src]="categories.path" alt="">
                         {{categories.category}}
                         <span class="text-quantity">{{categories.quantity}}</span>
                     </button>
                 </li>
+                <!-- <form action="" type="submit" value = {{categories.category}}></form> -->
+
             </div>
             <div class="groupdificultad">
                 <p class="filtros">Dificultad</p>

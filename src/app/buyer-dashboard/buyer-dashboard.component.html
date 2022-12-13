@@ -1,0 +1,43 @@
+<div class="user-dashboard">
+
+    <div class="row" style="margin-bottom: 50px;">
+
+        
+            <img src="assets/imgRectangle.png" alt="" style="height: 100px; width: 100%;">
+        
+
+        <div class="col-9">
+            <div  style="margin-top: 30px;  text-align: center;">
+                <span class="subtitle1">Productos </span>
+                <span class="subtitle2">populares</span><br>
+            </div>
+
+            <div class="scrollBar">
+                <li *ngFor="let product of productList" style="display: flex; text-decoration: none;" >
+                    <label class="lblProduct" for="">{{product.name}}</label>
+                    <label class="lblProduct" for="">$ {{product.price}}</label>
+                    <label class="lblProduct" for="">{{product.quantity}}</label>
+                    <label class="lblProduct" for="">{{product.unidMetric}}</label>
+                    <label class="lblProduct"  for="">{{product.finca}}</label>
+                    <label style="color: #27CA7D;" class="lblProduct" for=""> cel: {{product.contact}}</label>
+                </li>
+            </div>
+        </div>
+
+        <div class="col-3" style="justify-content: center;">
+            <img src="assets/imgSetsFruits.png" alt="" style="height: 200px; width: 250px; margin-top: 130px;">
+            <button class="bntShowInfo">Ver mapa</button> <br>
+            <button class="bntShowInfo"  (click)="modifyRoot(1)">Ver Recetas</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>

@@ -10,7 +10,7 @@ export interface Recipe {
   timeRecipe?: number;
   unidad?: string;
   porciones?: number;
-  pasos?: string;
+  pasos?: String;
 
 }
 
