@@ -46,7 +46,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { ButtomInteractiveComponent } from './buttom-interactive/buttom-interactive.component';
 import { DashboardVendedorComponent } from './dashboard/dashboard-vendedor/dashboard-vendedor.component';
 import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/dashboard-consumidor.component';
-
+import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
 
 
 
@@ -94,13 +94,8 @@ import { DashboardConsumidorComponent } from './dashboard/dashboard-consumidor/d
     ButtomInteractiveComponent,
     DashboardVendedorComponent,
     DashboardConsumidorComponent,
-    LoginComponent
-
-
-
-
-
-
+    LoginComponent,
+    BuyerDashboardComponent,
   ],
   imports: [
     BrowserModule,

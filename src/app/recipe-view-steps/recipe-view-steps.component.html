@@ -3,42 +3,41 @@
 
     <div class="row">
 
-        <li  *ngFor="let recipeStep of recipeList" style="text-align: center; list-style: none;">
-            <p class="tittleRecipe">{{recipeStep.nameRecipe}}</p>
-        </li>
+        <p class="tittleRecipe">{{recipe.nameRecipe}}</p>
+       
 
         <div class="col-6">
 
             <p class="subtitleRecipe">Ingredientes</p>
             <ul style="display: flex;list-style: none;justify-content: center;" >
-                <li  *ngFor="let recipeStep of recipeList">
+                
                     <div>
-                        <li *ngFor="let ing of recipeStep.ingredientes" style="display: flex; text-decoration: none;" >
-                            <label class="textRecipe" for="">{{ing.name}}</label>
+                        <li *ngFor="let ing of recipe.ingredients" style="display: flex; text-decoration: none;" >
+                            <label class="textRecipe" for="">{{ing["name"]}}</label>
                             <p>.............................</p>
-                            <label class="textRecipe" for="">{{ing.quantity}}</label>
-                            <label class="textRecipe" for="">{{ing.metric}}</label>
+                            <label class="textRecipe" for="">{{ing["quantity"]}}</label>
+                            <label class="textRecipe" for="">{{ing["metric"]}}</label>
                         </li>
                     </div>
 
-                </li>
+                
             </ul>
         </div>
 
         <div class="col-6">
-            <li  *ngFor="let recipeStep of recipeList" style="list-style: none;">
+            
                 <div>
-                    <li *ngFor="let tim of recipeStep.time" style="list-style: none;">
+                    <li *ngFor="let tim of recipe.time" style="list-style: none;">
                         <div>
                             <label class="textTime">Tiempo total</label>
-                            <label class="textTimeValues" for="">{{tim.value}} {{tim.metricTime}}</label> <br>
+                            <label class="textTimeValues" for="">{{tim["value"]}} {{tim["metricTime"]}}</label> <br>
                             <label class="textTime">Cantidad de personas</label>
-                            <label class="textTimeValues" >{{recipeStep.quantityPerson}}</label> <br>
+                            <label class="textTimeValues" >{{recipe["quantityPerson"]}}</label> <br>
                          </div>
                     </li>
                 </div>
 
-            </li>
+          
         </div>
     </div>
 
@@ -46,27 +45,16 @@
         <div class="col-12" >
             <p class="subtitleRecipe">Pasos</p>
             <div class="scrollBar">
-                
                 <ul>
-                <li  *ngFor="let recipeStep of recipeList" style="list-style: none;">
-                        
                     <div style="display: flex;">
-                        <li class="stepsLi" *ngFor="let step of recipeStep.steps" style="list-style: none;">
-                            <span class="textTime"> {{step.idStep}}</span> <br>
-                            <span class="textTime"> {{step.description}}</span>
+                        <li class="stepsLi" *ngFor="let step of recipe.steps" style="list-style: none;">
+                            <span class="textTime"> {{step["idStep"]}}</span> <br>
+                            <span class="textTime"> {{step["description"]}}</span>
                         </li>
                     </div>
-                </li>
-                
+                <button class="bntShowInfo">Atrás</button> <br>
             </ul>
-
         </div>
-        </div>
-
-        <!-- <div></div>
-
-        <ul>
-       
-    </ul> -->
+     </div>
      </div>
 </div>
